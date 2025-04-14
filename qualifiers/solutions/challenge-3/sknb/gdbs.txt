@@ -1,0 +1,498 @@
+
+set logging file bt.txt
+b func_AAAAAAAAAA
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_BBBBBBBBBB
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_CCCCCCCCCC
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_DDDDDDDDDD
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_EEEEEEEEEE
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_FFFFFFFFFF
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_GGGGGGGGGG
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_HHHHHHHHHH
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_IIIIIIIIII
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_JJJJJJJJJJ
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_KKKKKKKKKK
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_LLLLLLLLLL
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_MMMMMMMMMM
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_NNNNNNNNNN
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_OOOOOOOOOO
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_PPPPPPPPPP
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_QQQQQQQQQQ
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_RRRRRRRRRR
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_SSSSSSSSSS
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_TTTTTTTTTT
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_UUUUUUUUUU
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_VVVVVVVVVV
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_WWWWWWWWWW
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_XXXXXXXXXX
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_YYYYYYYYYY
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_ZZZZZZZZZZ
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_aaaaaaaaaa
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_bbbbbbbbbb
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_cccccccccc
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_dddddddddd
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_eeeeeeeeee
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_ffffffffff
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_gggggggggg
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_hhhhhhhhhh
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_iiiiiiiiii
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_jjjjjjjjjj
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_kkkkkkkkkk
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_llllllllll
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_mmmmmmmmmm
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_nnnnnnnnnn
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_oooooooooo
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_pppppppppp
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_qqqqqqqqqq
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_rrrrrrrrrr
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_ssssssssss
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_tttttttttt
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_uuuuuuuuuu
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_vvvvvvvvvv
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_wwwwwwwwww
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_xxxxxxxxxx
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_yyyyyyyyyy
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_zzzzzzzzzz
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_0000000000
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_1111111111
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_2222222222
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_3333333333
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_4444444444
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_5555555555
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_6666666666
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_7777777777
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_8888888888
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+
+b func_9999999999
+    commands
+        set logging enabled on
+        bt 1
+        set logging enabled off
+        c
+    end
+r

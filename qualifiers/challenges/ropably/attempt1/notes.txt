@@ -1,0 +1,6 @@
+
+gcc -fPIC -fno-asynchronous-unwind-tables -ffunction-sections -ffixed-rbx -Wall -Wpedantic -S -o test-function.S test-function.c
+
+gcc part1.S part2.S part3.S -o test1.o
+
+

@@ -1,0 +1,32 @@
+challenge_id = "n-buns"
+
+challenge_name = "n-buns"
+
+challenge_description = '''
+Some functions have non-random names, use those names in call order to get the password.
+'''
+
+challenge_spoilers = '''
+Generates big binaries with lightly obfuscated control flow.
+
+Will name a small subset of functions based on characters in the flag, like:
+- func_AAAAAAAAAA
+- func_iiiiiiiiii
+- func_underscore
+- func_leftcurly0
+
+Expected solution is for teams to use static or dynamic analysis scripts to
+determine the traversal order of these functions and print out the character
+for each one to spell out the flag.
+
+For example, if the flag was `Fl4G`, there would be four functions among the
+thousands that would execute, named:
+
+- func_FFFFFFFFFF
+- func_llllllllll
+- func_4444444444
+- func_GGGGGGGGGG
+
+And that's the order they execute in the binary. This is observable statically
+by creating the call graph and doing a preorder traversal.
+'''

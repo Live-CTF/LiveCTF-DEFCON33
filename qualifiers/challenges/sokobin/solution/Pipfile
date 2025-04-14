@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pwntools = "==4.14.1"
+leb128 = "*"
+tqdm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

@@ -1,0 +1,42 @@
+challenge_id = "sokobin"
+
+challenge_name = "sokobin"
+
+challenge_description = '''
+ROSE is RED
+VIOLET is BLUE
+RIP is WIN
+STACK is MOVE
+'''
+
+challenge_spoilers = '''
+It's Sokoban except with the bits of the stack! Push them around to modify live memory
+and rewrite the return address to a win function (or pick another method if you dare!).
+
+My solve for this one was a little messy, and involved writing dijkstra's algorithm :D
+Basically it has a few stages
+
+1:
+Enable debug (one of the bits in the second line does this) and jump above the board ptr
+(have to do that because sometimes this is impassable)
+
+2: 
+Clear out the return address by pushing all the bits up
+
+3.
+Push bits into the return address one at a time so it has the correct value
+This ends up being kinda tricky:
+3a.
+For the lower 32 bits, we need to path above the bits and push them down so we don't
+break the pointers below here like the stack canary
+3b.
+For the upper 32 bits, we need to clear them out again and push again. I opted to push them
+all to the left and then up. Unfortunately sometimes this leads to an unsolveable board.
+In practice this doesn't happen very often, but if it happens during the ctf I will melt :(
+TODO: address that?
+3c.
+Repeat 3a and push the bits back down where we can
+
+4.
+Done!
+'''

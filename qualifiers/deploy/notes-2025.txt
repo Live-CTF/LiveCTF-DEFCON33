@@ -1,0 +1,25 @@
+* project: "LiveCTF 2025"
+* buckets:
+  - livectf25-exploits
+  - livectf25-backups
+  - livectf25-challenges
+  - livectf25-recordings
+
+LiveCTF 2025 API Server
+livectf-2025-api-server
+Read challenges and write exploits for LiveCTF 2025 Quals
+livectf-2025-api-server@livectf-2025.iam.gserviceaccount.com
+livectf25-challenges: Storage Object Viewer
+livectf25-exploits: Storage Object Creator
+
+LiveCTF 2025 Exploits Reader
+livectf-2025-exploits-reader
+Read exploit files for LiveCTF Quals 2025
+livectf-2025-exploits-reader@livectf-2025.iam.gserviceaccount.com
+livectf25-exploits: Storage Object Viewer
+
+LiveCTF 2025 Backup
+livectf-2025-backup
+Create backups for LiveCTF Quals 2025
+livectf-2025-backup@livectf-2025.iam.gserviceaccount.com
+livectf25-backups: Storage Object Creator

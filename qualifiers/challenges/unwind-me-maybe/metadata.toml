@@ -1,0 +1,29 @@
+challenge_id = "unwind-me-maybe"
+
+challenge_name = "unwind-me-maybe"
+
+challenge_description = '''
+After a challenging day of pwning, it's nice to settle down and unwind with your
+friends who are exceptional.
+'''
+
+challenge_spoilers = '''
+It's an arbitrary c++ exception metadata overwrite.
+
+I spent a bit of time poking at this in libdebug trying to see which offsets let me gain
+control over rip before giving up and using ghidra (rip binja, doesn't support exceptions)
+and looking at the exception metadata. I found the place that had the unwind landing pads
+for the exception thrown by the binary, and it looked like the target address was just there.
+Of course, this was Ghidra helpfully representing a uleb128 offset as a comment and it took
+a hot minute for me to realize how it _actually_ worked, but then I had control over rip.
+
+I tried jumping to one_gadget but apparently none of them had favorable registers, and this
+configuration only gave me one jump. So what to do? ret2gets obviously! Just calculate the
+offset of gets() in libc from the exception handler in the binary, uleb128 that number
+into the metadata, and it'll totally go there. Then there's a stack address in rdi so gets()
+just gives you full stack control and ez win.
+
+The hardest part of this challenge was (as always with this series) figuring out how tf to
+solve it, and whether reading the docs was better or worse than Just Sending It.
+As usual, reading the docs was a colossal waste of time and Just Sending It worked great.
+'''

@@ -1,0 +1,6 @@
+
+curl -H 'x-livectf-admin: 9808d227a9705cfec51476f0feceb0a6' 'http://localhost:9000/exploits/' | jq .
+curl -H 'x-livectf-admin: 9808d227a9705cfec51476f0feceb0a6' 'http://localhost:9000/exploits/104182b1-a372-43c1-9781-7ed82985bbdd/rerun' | jq .
+
+curl -u livectf:13a81dc9e8b93f54c7a939a3504f2280 -H 'x-livectf-admin: 8ffd62cc1c767231d1b3f3655831bb53' 'https://play.livectf.com/api/exploits/daa7a465-b6eb-4b24-8040-cb0fe1789c8b/rerun' | jq .
+curl -u livectf:13a81dc9e8b93f54c7a939a3504f2280 'https://play.livectf.com/api/challenges/1001' -H "X-LiveCTF-Token: XXXX" -F exploit=@your-solution.tar.gz

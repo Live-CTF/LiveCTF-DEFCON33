@@ -1,0 +1,34 @@
+challenge_id = "no-f-in-the-stack"
+
+challenge_name = "no-f-in-the-stack"
+
+challenge_description = '''
+Hex? Dec? Why can't I decide? I know, I'll just do both!
+'''
+
+challenge_spoilers = '''
+It's a ROP chain where every nibble of your chain must be a decimal digit.
+Challenge originally inspired by Azure (greetz)
+
+Binary compiled with static libc and fixed address so that you can actually have good
+gadgets available, otherwise libc loads at 0x7f.......... and lol the entire thing is bad.
+That being said, the actual gadgets you get kinda suck. My shitty script was unable to find
+any `pop rax` gadgets, and I ended up using `pop rbx` -> `xchg eax, ebx` like wat.
+
+My solution was basically just rop to execve /bin/sh which is included in the binary
+by virtue of having a function that calls system(), though the address of the string
+has some non-decimal nibbles in it so it's loaded in two parts. Then you need:
+
+rax -> 3b
+Done via `pop rbx` (no `pop rax`?) and `add eax, 3` to avoid the b in the chain
+
+rdi -> /bin/sh
+`pop rbx` and `pop rdi` and `add edi, ebx` so it can split the 8 bit out
+
+rsi -> 0
+Probably an easier way but I found a `bsr rsi, rsi` gadget that sets rsi to 0 when rsi is 1
+So I just `pop rsi` to 1 and called that
+
+rdi -> 0
+Already was 0 at the start
+'''

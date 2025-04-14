@@ -1,0 +1,12 @@
+challenge_id = "mlmm"
+
+challenge_name = "Multi-Level Model Marketing"
+
+challenge_description = '''
+Can you rise to the heights of this new multi-level marketing model?
+your job as an MLMM in training is to get the highest CTR possible.
+'''
+
+challenge_spoilers = '''
+Just win? Maximize sentiment, get the clicks, hit the high score, overflow the buffer.
+'''

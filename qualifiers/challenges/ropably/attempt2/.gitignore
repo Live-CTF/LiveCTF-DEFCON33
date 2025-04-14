@@ -1,0 +1,4 @@
+program
+program-plain
+*.o
+samples/

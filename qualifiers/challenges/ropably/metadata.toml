@@ -1,0 +1,21 @@
+challenge_id = "ropably"
+
+challenge_name = "ropably"
+
+challenge_description = '''
+Is this the sweetest obfuscation scheme you have seen this year? ropably.
+Can you solve it? ropably not.
+Will you get a flag if you can crack a bunch of these in a quick succession? ropably.
+'''
+
+challenge_spoilers = '''
+ncuts style challenge where you have to solve 20 crackmes samples from a larger collectrion.
+Each binary takes a 16 character password and checks it against 16 conditions.
+The binary is obfuscated with a ROP-based scheme. The function is broken up into basic blocks.
+Each basic block is then split into chunks of a few instructions.
+These chunks are shuffled, wrapped in a few extra instructions and then their addresses are put in a ROP chain.
+The program starts by swapping the stack pointer with the location of this chain and executing a ret.
+
+The reference solution automatically undoes this obfuscation and then runs the function through angr to get the password.
+It's also possible to do less deobfuscation and instead guide angr a bit more to make it work.
+'''

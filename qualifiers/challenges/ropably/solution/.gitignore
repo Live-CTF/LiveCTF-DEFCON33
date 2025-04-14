@@ -1,0 +1,6 @@
+*.tar.gz
+challenges/
+deobf.o
+deobf.S
+unsat_elf
+unsat_elf_deobf
